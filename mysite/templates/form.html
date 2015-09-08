@@ -4,7 +4,7 @@
     <title>{{ title }} - Test Site</title>
   </head>
   <body>
-    <form action="/form" method="post" style="margin:0px;padding:0px;">
+    <form action="{{action}}" method="post" style="margin:0px;padding:0px;">
     {% csrf_token %}
       <h1>{{ title }}</h1>
       <p>{{ msg|safe }}</p>
@@ -13,7 +13,7 @@
       /
       <a href="/about">About</a>
       /
-      <a href="/names">Names</a>
+      <a href="/names">Names</a> - <a href="/names/add">Add</a>
       /
       <a href="/form">Form</a>
     </form>

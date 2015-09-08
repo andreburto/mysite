@@ -26,6 +26,7 @@ urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^index$', views.index, name='index'),
     url(r'^about$', views.about, name='about'),
+    url(r'^names/add$', views.names_add, name='names_add'),
     url(r'^names$', views.names, name='names'),
     url(r'^form$', views.form, name='form'),
 ]
